@@ -6,18 +6,15 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
-import { FooterComponent } from './shared/footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 import { ComponentsModule } from './components/components.module';
-import { ExamplesModule } from './examples/examples.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    FooterComponent
+    AppComponent
+    ,NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -25,8 +22,7 @@ import { ExamplesModule } from './examples/examples.module';
     FormsModule,
     RouterModule,
     ComponentsModule,
-    ExamplesModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
